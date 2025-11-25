@@ -5,18 +5,23 @@ html <!DOCTYPE html> <html lang="en">
  <title>Daity Yaraj - Premium Toss Prediction</title>
  <script src="https://cdn.tailwindcss.com">
  </script>
- <script>
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        navy: '#1e3a8a',
-        'navy-dark': '#1e40af',
-      },
-    },
-  },
-}
-</script>
+name: Build Jekyll site
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 3.1
+      - run: bundle install
+      - run: bundle exec jekyll build
+
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
 </head>
  <body class="min-h-screen bg-navy overflow-x-hidden"> 
