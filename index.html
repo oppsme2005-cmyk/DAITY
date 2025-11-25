@@ -1,0 +1,84 @@
+html <!DOCTYPE html> <html lang="en">
+ <head>
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Daity Yaraj - Premium Toss Prediction</title>
+ <script src="https://cdn.tailwindcss.com">
+ </script>
+ <script> tailwind.config = { theme: { extend: { colors: { 'navy': '#1e3a8a', 'navy-dark': '#1e40af', } } } } 
+ </script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+</head>
+ <body class="min-h-screen bg-navy overflow-x-hidden"> 
+<!-- Background with blur effect --> 
+<div class="fixed inset-0 z-0"> 
+<div class="absolute inset-0 bg-gradient-to-br from-navy via-navy-dark to-blue-900">
+</div> <div class="absolute inset-0 bg-black/40">
+</div> 
+<!-- Blurred background image placeholder --> 
+<div class="absolute inset-0 bg-gradient-to-r from-blue-900/50 to-navy/50 backdrop-blur-sm">
+</div>
+ </div> 
+ <!-- Main Content --> 
+<div class="relative z-10 min-h-screen flex items-center justify-center p-4"> 
+<div class="w-full max-w-md mx-auto text-center space-y-6">
+ <!-- Profile Image --> 
+ <!-- Profile Image -->
+<div class="flex justify-center mb-6">
+    <div class="w-24 h-24 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-500 p-1 shadow-2xl">
+        <div class="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
+            <img src="pro.jpg" class="w-full h-full rounded-full object-cover" />
+        </div>
+    </div>
+</div>
+<!-- Main Heading --> <div class="space-y-2">
+ <h1 class="text-4xl md:text-5xl font-black text-white tracking-tight"> DAITY YARAJ </h1> 
+<p class="text-lg md:text-xl text-gray-200 font-semibold"> Toss Match Session Prediction </p>
+ </div> 
+ <!-- Countdown Section -->
+ <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 shadow-2xl border border-white/20"> 
+<p class="text-white font-bold text-sm mb-3 tracking-wide"> FREE JOINING ENDS IN... </p>
+ <div class="bg-yellow-400 rounded-full w-20 h-20 mx-auto flex items-center justify-center shadow-lg"> 
+<div id="countNum" class="circle">49</div>
+
+<script>
+    let count = 49;  // starting number
+
+    let timer = setInterval(() => {
+        count--;
+        document.getElementById("countNum").innerHTML = count;
+
+        if (count <= 0) {
+            clearInterval(timer);
+            document.getElementById("countNum").innerHTML = "0";
+        }
+    }, 1000);
+</script>
+ </div> 
+</div> 
+<!-- Username --> <div class="text-center"> 
+<p class="text-xl font-bold text-white">@DAITYAYOYO</p> 
+</div>
+ <!-- Access Request Text --> 
+<p class="text-gray-300 text-sm font-medium"> Request access — approvals are quick ⬇︎ </p> 
+<!-- CTA Button --> 
+<div class="pt-4">
+ <a href="https://t.me/+qcuGYAL_MQFmNWY1" class="inline-flex items-center justify-center w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-2xl shadow-2xl transition-all duration-300 transform hover:scale-105 active:scale-95">
+ <i class="fas fa-paper-plane mr-3 text-lg"></i> <span class="text-lg">JOIN NOW TELEGRAM CHANNEL</span>
+ </a>
+ </div>
+ <!-- Footer --> <div class="pt-8"> <p class="text-yellow-400 font-semibold text-sm"> Advertising by AD DAITYAYOYO </p> 
+</div>
+ </div>
+ </div>
+ <!-- Animated Background Elements -->
+ <div class="fixed inset-0 z-0 overflow-hidden pointer-events-none"> 
+<div class="absolute top-1/4 left-1/4 w-32 h-32 bg-yellow-400/10 rounded-full blur-xl animate-pulse">
+</div>
+ <div class="absolute bottom-1/4 right-1/4 w-40 h-40 bg-blue-400/10 rounded-full blur-xl animate-pulse delay-1000">
+</div>
+ </div>
+ <script> // Simple countdown animation let count = 7; const countdownElement = document.getElementById('countdown'); setInterval(() => { count--; if (count <= 0) count = 7; countdownElement.textContent = count; }, 1000); // Add subtle animations on load window.addEventListener('load', () => { document.querySelector('.space-y-6').style.animation = 'fadeInUp 0.8s ease-out'; }); // Add CSS animation const style = document.createElement('style'); style.textContent = ` @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } } `; document.head.appendChild(style); 
+</script> 
+</body> 
+</html>
